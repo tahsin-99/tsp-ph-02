@@ -9,6 +9,7 @@
    <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet">
+   <link rel="stylesheet" href="style/style.css">
 
    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -22,15 +23,15 @@
 </head>
 
 <body>
-   <header class=" w-285  mx-auto mt-[30px]">
-      <div class="flex justify-between gap items-center  ">
+   <header class=" w-285  mx-auto mt-[30px]  ">
+      <div class="flex justify-between gap items-center px-50 lg:px-0  ">
 
          <img src="assets/logo.png" alt="">
 
-         <div class="flex gap-8">
-            <p class="font-bold">Home</p>
-            <p class="text-[#8987A1]">Shop</p>
-            <p class="text-[#8987A1]">About us</p>
+         <div class="flex  gap-8">
+            <p class="font-bold hidden lg:block">Home</p>
+            <p class="text-[#8987A1]  hidden lg:block ">Shop</p>
+            <p class="text-[#8987A1] hidden lg:block  ">About us</p>
             <p><i class="fa-solid fa-cart-shopping"></i> Cart($56)</p>
          </div>
 
@@ -39,11 +40,14 @@
 
    </header>
    <main>
-      <div class="w-285 h-116  mx-auto mt-30 flex justify-between items-end">
-         <div class="w-1/2">
-            <p><span class="text-[65px] font-serif font-bold">ALWAYS</span> <span
-                  class="text-[#E95A08] font-serif font-bold text-[65px]">FRESH <br> FLOWERS</span> </p>
-            <p class="text-[22px] font-normal font-inter text-[#7f7f82] ">Indulge your senses with the beauty and
+      <div
+         class="  w-285 h-116  mx-auto mt-30 flex flex-col-reverse lg:flex-row  justify-between items-end gap-2 lg:gap-0">
+         <div class="lg:w-1/2 w-[100%] text-start  ">
+            <p><span class="text-[65px] font-serif font-bold ml-5 lg:ml-0">ALWAYS</span> <span
+                  class="text-[#E95A08] font-serif font-bold text-[65px] ">FRESH <br> <span
+                     class="ml-5 lg:ml-0 ">FLOWERS</span></span> </p>
+            <p class="text-[22px] ml-5 lg:ml-0 font-normal font-inter text-[#7f7f82] ">Indulge your senses with the
+               beauty and
                fragrance of our
                fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are
                perfect for any occasion. </p>
@@ -54,14 +58,15 @@
 
       </div>
 
-      <div class="w-284 h-297 mx-auto  mt-[120px]">
+      <div class=" w-284 h-297 mx-auto  mt-[120px]">
          <div class="text-center">
             <p class="font-bold text-[50px]"><span class="text-[#E95A08]">Our </span>Plants</p>
             <p class="text-[22px] font-normal text-[#7f7f82] ">Indulge your senses with the beauty and fragrance of our
                fresh flower shop. From <br> classic roses to exotic blooms, we offer a wide variety of fresh.</p>
          </div>
-         <div Class="mt-[49px] grid grid-cols-4 gap-x-[20px] gap-y-[30px]">
-            <div class="w-67 h-120  text-center">
+         <div
+            Class="mt-[49px] grid grid-cols-2 ml-60 lg:ml-0 lg:grid-cols-4 lg:gap-x-[20px] gap-x-[10px] gap-y-[30px] ">
+            <div class="w-67  h-120  text-center">
                <img src="assets/sample-flower-image.png" alt="">
                <p class="text-[22px] font-medium">Lily Blossom</p>
                <p class="text-[22px] font-bold">20 USD</p>
@@ -121,73 +126,85 @@
          </div>
       </div>
 
-      <div class="w-285 h-150  mx-auto mt-53 relative ">
+      <div class="  w-285 h-150 lg:mt-120 mt-300 mx-auto mt-53 relative ">
 
-         <div class="flex justify-between items-center ">
+         <div class="flex lg:flex-row flex-col justify-between items-center ">
             <div>
-               <img src="assets/flower-store.png" alt="">
+               <img class="border " src="assets/flower-store.png" alt="">
             </div>
-            <div class="w-1/2 flex flex-col gap-y-[20px] p-4 ">
-               <p class="font-bold text-[50px]">Flower & Plants <br> Lover</p>
-               <p class="text-[22px] font-normal text-[#7f7f82] ">. Indulge your senses with the beauty and fragrance of
+            <div class="lg:w-1/2  flex flex-col  gap-y-[20px] p-4 ">
+               <p class="font-bold lg:text-[50px] text-[70px] mt-20 lg:mt-0">Flower & Plants <br> Lover</p>
+               <p class="lg:text-[22px] text-[36px] font-normal text-[#7f7f82] ">. Indulge your senses with the beauty
+                  and fragrance of
                   our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
-               <p class="text-[22px] font-normal text-[#7f7f82] ">. Indulge your senses with the beauty and fragrance of
+               <p class="lg:text-[22px] text-[36px] font-normal text-[#7f7f82] ">. Indulge your senses with the beauty
+                  and fragrance of
                   our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
-               <p class="text-[22px] font-normal text-[#7f7f82] ">. Indulge your senses with the beauty and fragrance of
+               <p class="lg:text-[22px] text-[36px] font-normal text-[#7f7f82] ">. Indulge your senses with the beauty
+                  and fragrance of
                   our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
 
             </div>
 
 
          </div>
-         <div class="absolute bottom-[440px] left-[360px]">
-            <img style="filter: drop-shadow(-1px  10px 1.5px rgba(0, 0, 0, 0.25));" width="286" height="286" src="assets/trusted-badge.png" alt="">
+         <div class="absolute bottom-[440px] left-[360px] hidden lg:block">
+            <img style="filter: drop-shadow(-1px  10px 1.5px rgba(0, 0, 0, 0.25));" width="286" height="286"
+               src="assets/trusted-badge.png" alt="">
          </div>
       </div>
 
-      <div class="text-center mt-[133px]">
-         <p class="font-bold text-[50px] font-serif "> <span class="text-[#E95A08]">Latest</span> Deals</p>
-         <p class="text-[22px] font-normal text-[#7f7f82] ">Indulge your senses with the beauty and fragrance of our
-            fresh flower shop. From <br> classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+      <div>
+         <div class=" text-center  lg:mt-[133px] mt-[1500px] ">
+            <p class="font-bold lg:text-[50px] text-[80px] font-serif  "> <span class="text-[#E95A08]">Latest</span>
+               Deals</p>
+            <p class="lg:text-[22px] text-[36px]   font-normal text-[#7f7f82] ">Indulge your senses with the beauty and
+               fragrance of ourfresh flower shop. From <br> classic roses to exotic blooms, we offer a wide variety of
+               fresh.</p>
+
+         </div>
       </div>
 
-     <div class="w-[1140px] mx-auto mt-[120px] grid grid-cols-3 gap-5">
-  
-  <div class="flex flex-col gap-2">
-    
-    <div class="relative h-[160px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url('assets/deal-bloom.png');">
-      <div class="absolute inset-0 bg-black/40"></div>
-      <div class="absolute inset-0 flex flex-col items-center justify-center px-5 text-white">
-        <p class="text-[20px] font-bold">60% Off | Bloom Plant</p>
-        <a href="#" class="underline mt-2 font-semibold">Shop Now</a>
-      </div>
-    </div>
+      <div class="  w-[1140px] mx-auto mt-[120px] grid lg:grid-cols-3 p-5 lg:p-0 lg:gap-5 gap-10">
 
-    
-    <div class="relative h-[160px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url('assets/deal-ana.png');">
-      <div class="absolute inset-0 bg-black/40"></div>
-      <div class="absolute inset-0 flex flex-col items-center justify-center px-5 text-white">
-        <p class="text-[20px] font-bold">30% Off | Ana Plant</p>
-        <a href="#" class="underline mt-2 font-semibold">Shop Now</a>
-      </div>
-    </div>
-  </div>
+         <div class="flex flex-col lg:gap-2 gap-10">
 
- 
-  <div class="col-span-2 relative h-[330px] rounded-xl overflow-hidden bg-cover bg-center" style="background-image: url('assets/deal-zabo.png');">
-    <div class="absolute inset-0 bg-black/40"></div>
-    <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
-      <p class="text-[32px] font-bold">25% Off | Zabo Plant</p>
-      <a href="#" class="underline mt-2 font-semibold text-lg">Shop Now</a>
-    </div>
-  </div>
-</div>
+            <div class="relative lg:h-[160px] h-[360px] rounded-xl overflow-hidden bg-cover bg-center"
+               style="background-image: url('assets/deal-bloom.png');">
+               <div class="absolute inset-0 bg-black/40"></div>
+               <div class="absolute inset-0 flex flex-col items-center justify-center px-5 text-white">
+                  <p class="text-[20px] font-bold">60% Off | Bloom Plant</p>
+                  <a href="#" class="underline mt-2 font-semibold">Shop Now</a>
+               </div>
+            </div>
+
+
+            <div class="relative lg:h-[160px] h-[360px] rounded-xl overflow-hidden bg-cover bg-center"
+               style="background-image: url('assets/deal-ana.png');">
+               <div class="absolute inset-0 bg-black/40"></div>
+               <div class="absolute inset-0 flex flex-col items-center justify-center px-5 text-white">
+                  <p class="text-[20px] font-bold">30% Off | Ana Plant</p>
+                  <a href="#" class="underline mt-2 font-semibold">Shop Now</a>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="lg:col-span-2 relative h-[330px] rounded-xl overflow-hidden bg-cover bg-center"
+            style="background-image: url('assets/deal-zabo.png');">
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
+               <p class="text-[32px] font-bold">25% Off | Zabo Plant</p>
+               <a href="#" class="underline mt-2 font-semibold text-lg">Shop Now</a>
+            </div>
+         </div>
+      </div>
 
 
 
       <div
          style="background-image: url(./assets/news-letter-bg.png);background-repeat: no-repeat ;width: 100%;overflow: hidden;"
-         class="mt-[120px]  h-133 mx-auto bg-cover bg-center text-center flex flex-col justify-center ">
+         class="  mt-[120px]  h-133  bg-cover bg-center text-center flex flex-col justify-center ">
          <div>
             <p class="font-bold text-[50px] font-serif text-white">Join the colorful Bunch</p>
             <input class="w-160 h-15.25 bg-white mt-[20px] px-5 py-2" type="email" placeholder="Write email"><button
@@ -199,32 +216,33 @@
 
    </main>
    <footer>
-     <div class="grid grid-cols-4 px-40 py-12 items-center">
-       <div>
-         <img src="assets/logo.png" alt="">
-         <p class="text-[22px] font-normal text-[#7f7f82] mt-4 ">Indulge your senses with the <br> beauty and fragrance of our fresh <br> flower shop. </p>
+      <div class="  grid lg:grid-cols-4 grid-cols-1  px-40 py-12 items-center">
+         <div>
+            <img src="assets/logo.png" alt="">
+            <p class="text-[22px] font-normal text-[#7f7f82] mt-4 ">Indulge your senses with the <br> beauty and
+               fragrance of our fresh <br> flower shop. </p>
+         </div>
+         <div class="flex flex-col gap-8 text-[#7f7f82]">
+            <p><a href="">Home</a></p>
+            <p><a href="">About Us</a></p>
+            <p><a href="">Blog</a></p>
+            <p><a href="">FAQ</a></p>
+            <p><a href="">Contact Us</a></p>
+         </div>
+         <div class="flex flex-col gap-8 text-[#7f7f82]">
+            <p><a href="">Features</a></p>
+            <p><a href="">Pricin</a>g</p>
+            <p><a href="">Privacy Policiy</a></p>
+            <p><a href="">Terms of Service</a></p>
+            <p><a href="">Help Center</a></p>
+         </div>
+         <div class="flex gap-10 mt-20 lg:mt-0">
+            <img src="assets/icon-linkedin.png" alt="">
+            <img src="assets/icon-twitter.png" alt="">
+            <img src="assets/icon-facebook.png" alt="">
+            <img src="assets/icon-youtube.png" alt="">
+         </div>
       </div>
-      <div class="flex flex-col gap-8 text-[#7f7f82]">
-        <p><a href="">Home</a></p>
-        <p><a href="">About Us</a></p>
-        <p><a href="">Blog</a></p>
-        <p><a href="">FAQ</a></p>
-        <p><a href="">Contact Us</a></p>
-      </div>
-      <div class="flex flex-col gap-8 text-[#7f7f82]">
-         <p><a href="">Features</a></p>
-         <p><a href="">Pricin</a>g</p>
-         <p><a href="">Privacy Policiy</a></p>
-         <p><a href="">Terms of Service</a></p>
-         <p><a href="">Help Center</a></p>
-      </div>
-      <div class="flex gap-10">
-         <img src="assets/icon-linkedin.png" alt="">
-         <img src="assets/icon-twitter.png" alt="">
-         <img src="assets/icon-facebook.png" alt="">
-         <img src="assets/icon-youtube.png" alt="">
-      </div>
-     </div>
 
    </footer>
 </body>
